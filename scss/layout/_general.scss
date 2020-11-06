@@ -1,0 +1,40 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color: currentColor;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+body{
+	font: 600 16px $text;
+	color: var(--color);
+}
+
+.container{
+	max-width: 1200px;
+	min-width: 320px;
+	padding: 0 15px;
+	width: 100%;
+	margin: 0 auto;
+}
