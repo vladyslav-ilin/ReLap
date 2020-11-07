@@ -1,0 +1,18 @@
+.header {
+   min-height: 100vh;
+   background: url("../images/header.png") no-repeat bottom center;
+   background-size: cover;
+   position: relative;
+   color: #fff;
+   &::before {
+      @include pos(absolute, 0, 0, 0, 0);
+      @include size(100%);
+      content: "";
+      background: linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
+      z-index: -1;
+   }
+   &__navigation {
+      background: #fff;
+      margin: 0 -15px;
+   }
+}

@@ -5,4 +5,9 @@
    display: inline-block;
    text-align: center;
    padding: 12px;
+   border: 1px solid transparent;
+   &--navigation{
+      background: transparent;
+      border-color: rgba(255, 255, 255, 0.3);;
+   }
 }
