@@ -95,7 +95,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   min-width: 320px;
   padding: 0 15px;
   width: 100%;
@@ -162,8 +162,176 @@ body {
 .button {
   width: 170px;
   background: var(--yellow);
+  border: 1px solid transparent;
   border-radius: 24px;
   display: inline-block;
   text-align: center;
   padding: 12px;
+  font-weight: 700;
+}
+
+.button--navigation {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+  font: 700 24px "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.text {
+  margin-bottom: 35px;
+}
+
+.social {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 30px;
+}
+
+.social__icon {
+  font-size: 32px;
+  margin: 0 5px;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu__toggle {
+  display: none;
+}
+
+.menu__toggle:checked + .menu__label .menu__line {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 3px solid #c86dd7;
+  border-radius: 50%;
+}
+
+.menu__toggle:checked + .menu__label::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 11px;
+}
+
+.menu__toggle:checked + .menu__label::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: 11px;
+}
+
+.menu__toggle:checked ~ .menu__wrapper {
+  opacity: 1;
+}
+
+.menu__label {
+  width: 30px;
+  height: 25px;
+  position: relative;
+  top: 5px;
+  z-index: 99;
+  display: block;
+  cursor: pointer;
+}
+
+.menu__label::before, .menu__label::after {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  content: "";
+  background: #c86dd7;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.menu__label::before {
+  top: 0;
+}
+
+.menu__label::after {
+  bottom: 0;
+}
+
+.menu__line {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background: #c86dd7;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.menu__wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(60, 40, 177, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.menu__item {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.menu__link {
+  font-size: 18px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.header {
+  min-height: 100vh;
+  background: url("../images/header.png") no-repeat center 20vh, linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.header__navigation {
+  background: #fff;
+  margin: 0 -15px;
+  padding: 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.header__title {
+  font: 700 56px/64px "Poppins", sans-serif;
+  margin-bottom: 25px;
 }

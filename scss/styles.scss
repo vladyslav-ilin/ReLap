@@ -6,7 +6,11 @@
 // Layout
 @import "layout/_general";
 @import "layout/_fonts";
-@import "layout/button";
+@import "layout/_button";
+@import "layout/_typography";
+@import "layout/_social";
+@import "layout/_menu";
 
 // Page styles
 @import "modules/_header";
+@import "modules/_media";

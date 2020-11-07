@@ -1,0 +1,8 @@
+.social{
+   @include align(false, true, absolute);
+   bottom: 30px;
+   &__icon{
+      font-size: 32px;
+      margin: 0 5px;
+   }
+}

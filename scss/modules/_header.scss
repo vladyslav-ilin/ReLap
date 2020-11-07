@@ -1,0 +1,20 @@
+.header {
+   min-height: 100vh;
+   background: url("../images/header.png") no-repeat center 20vh,
+      linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
+   background-size: cover;
+   color: #fff;
+   position: relative;
+   &__navigation {
+      background: #fff;
+      margin: 0 -15px;
+      padding: 15px 15px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+   }
+   &__title {
+      font: 700 56px/64px $title;
+      margin-bottom: 25px;
+   }
+}
