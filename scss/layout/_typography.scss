@@ -3,6 +3,40 @@
    text-transform: uppercase;
    color: var(--color);
 }
+.subtitle{
+   font-weight: 700;
+   font-family: $title;
+   text-transform: uppercase;
+   margin-bottom: 15px;
+}
+.title{
+   font: 700 40px/48px $title;
+   margin-bottom: 25px;
+}
 .text{
-   margin-bottom: 35px;
+   line-height: 24px;
+   color: var(--color-opac);
+   &--gallery{
+      margin-bottom: 45px;
+   }
+}
+
+@media (min-width: $mobile) {
+   .logo{
+      font-size: 40px;
+      color: #fff;
+      transition: all .4s ease;
+      &:hover{
+         color: var(--hover);
+         transform: scale(1.1);
+      }
+   }
+   .title{
+      font-size: 56px;
+      line-height: 64px;
+      margin-bottom: 55px;
+   }
+   .text{
+      width: 50%;
+   }
 }

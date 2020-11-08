@@ -7,8 +7,24 @@
    text-align: center;
    padding: 12px;
    font-weight: 700;
+   cursor: pointer;
    &--navigation{
       background: transparent;
       border-color: rgba(255, 255, 255, 0.3);
+   }
+   &--images{
+      background: #C86DD7;
+      display: block;
+      margin: 0 auto;
+      color: #fff;
+   }
+}
+
+@media (min-width: $mobile){
+   .button{
+      &:hover{
+         background: var(--hover);
+         border-color: rgba(255, 255, 255, 0.3);
+      }
    }
 }
