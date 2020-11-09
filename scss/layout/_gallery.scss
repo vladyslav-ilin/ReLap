@@ -1,0 +1,17 @@
+.gallery{
+   background: #FDF2FF;
+   padding: 30px 0 50px;
+   &__nav{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+   }
+   &__list{
+      margin: 0 30px 25px 0;
+      color: var(--color-opac);
+      &--active{
+         color: var(--color);
+      }
+   }
+}
+

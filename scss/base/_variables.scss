@@ -3,7 +3,11 @@
    --color-opac: rgba(51,51,51,.5);
    --pink: #C86DD7;
    --yellow: #FFC300;
+   --hover: #3023AE;
 }
 
+$desktop: 1024px;
+$mobile: 770px;
+$mobile-sm: 500px;
 $title: 'Poppins', sans-serif;
 $text: 'Source Sans Pro', sans-serif;

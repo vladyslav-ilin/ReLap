@@ -1,9 +1,26 @@
 .social{
-   @include align(false, true, absolute);
-   bottom: 32px;
    &__icon{
       font-size: 32px;
-      display: inline-block;
-      margin: 0 4px;
+      margin: 0 5px;
    }
 }
+
+@media (max-width: $desktop) {
+   .social{
+      @include pos(absolute, $b:30px, $l:50%);
+      transform: translateX(-50%);
+}
+}
+
+@media (min-width: $desktop) {
+   .social{
+      @include pos(absolute, $b:30px, $r:15px);
+      &__icon{
+         transition: all .3s ease;
+         &:hover{
+            color: var(--hover);
+         }
+      }
+   }
+}
+
