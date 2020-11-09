@@ -15,11 +15,3 @@
    }
 }
 
-@media (min-width: $mobile){
-   .gallery{
-      &__info{
-         display: flex;
-         justify-content: space-between;
-      }
-   }
-}

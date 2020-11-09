@@ -238,6 +238,14 @@ body {
   .text {
     width: 50%;
   }
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .social__icon {
@@ -459,17 +467,6 @@ body {
   color: var(--color);
 }
 
-@media (min-width: 770px) {
-  .gallery__info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
 .images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -544,6 +541,10 @@ body {
   __wrapper {
     margin: 0 0 20px;
   }
+}
+
+.tempo {
+  background: #3023AE;
 }
 
 .header {

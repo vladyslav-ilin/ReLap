@@ -20,7 +20,6 @@
       margin-bottom: 45px;
    }
 }
-
 @media (min-width: $mobile) {
    .logo{
       font-size: 40px;
@@ -38,5 +37,9 @@
    }
    .text{
       width: 50%;
+   }
+   .info{
+      display: flex;
+      justify-content: space-between;
    }
 }
