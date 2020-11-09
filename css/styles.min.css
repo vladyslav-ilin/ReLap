@@ -102,6 +102,10 @@ body {
   margin: 0 auto;
 }
 
+.ullam-section {
+  background: #FDF2FF;
+}
+
 @font-face {
   font-family: "icomoon";
   font-weight: normal;
@@ -331,5 +335,74 @@ body {
   line-height: 24px;
   opacity: .5;
   margin-bottom: 30px;
+}
+
+.ullam {
+  padding-top: 30px;
+  padding-bottom: 1px;
+}
+
+.ullam__subtitle {
+  font: 700 16px "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.ullam__title {
+  font: 700 40px "Poppins", sans-serif;
+  line-height: 48px;
+  margin-bottom: 25px;
+}
+
+.ullam__text {
+  line-height: 24px;
+  opacity: .5;
+  margin-bottom: 45px;
+}
+
+.ullam__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ullam__list--item {
+  display: inline-block;
+  margin-right: 32px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  opacity: .5;
+}
+
+.ullam__list--item:first-child {
+  font-weight: 600;
+  opacity: 1;
+}
+
+.ullam__list--item:last-child {
+  margin-bottom: 45px;
+}
+
+.ullam__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ullam__images--img {
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.ullam__btn {
+  display: block;
+  background: var(--pink);
+  color: #fff;
+  margin: 0 auto 50px;
 }
 /*# sourceMappingURL=styles.min.css.map */
