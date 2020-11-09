@@ -1,13 +1,30 @@
 .button{
    width: 170px;
    background: var(--yellow);
+   border: 1px solid transparent;
    border-radius: 24px;
    display: inline-block;
    text-align: center;
    padding: 12px;
-   border: 1px solid transparent;
+   font-weight: 700;
+   cursor: pointer;
    &--navigation{
       background: transparent;
-      border-color: rgba(255, 255, 255, 0.3);;
+      border-color: rgba(255, 255, 255, 0.3);
+   }
+   &--images{
+      background: #C86DD7;
+      display: block;
+      margin: 0 auto;
+      color: #fff;
+   }
+}
+
+@media (min-width: $mobile){
+   .button{
+      &:hover{
+         background: var(--hover);
+         border-color: rgba(255, 255, 255, 0.3);
+      }
    }
 }
