@@ -1,16 +1,15 @@
 .autem {
-    position: relative;
+
     margin-top: 45px;
 
-        &__subtitle {
+    &__subtitle {
         font-family: $title;
         font-weight: 700;
         margin-bottom: 20px;
     }
 
     &__title {
-        font-family: $title;
-        font-weight: 700;
+        font-size: 48px;
         margin-bottom: 40px;
     }   
 
