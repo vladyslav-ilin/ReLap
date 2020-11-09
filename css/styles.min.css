@@ -613,3 +613,72 @@ body {
     width: 33%;
   }
 }
+
+.autem {
+  position: relative;
+  margin-top: 45px;
+}
+
+.autem__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.autem__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.autem__caption--totam {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.autem__caption--totam::after {
+  content: url(../images/arrow-down.png);
+  width: 10px;
+  height: 6px;
+  margin-left: 10px;
+}
+
+.autem__caption--totam::before {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  content: '';
+  width: 160px;
+  height: 8px;
+  background: var(--pink);
+  z-index: -1;
+}
+
+.autem__caption--eaque {
+  margin-bottom: 24px;
+}
+
+.autem__caption--eaque::after {
+  content: url(../images/arrow-down.png);
+  width: 10px;
+  height: 6px;
+  margin-left: 10px;
+}
+
+.autem__caption--inventore {
+  margin-bottom: 60px;
+}
+
+.autem__caption--inventore::after {
+  content: url(../images/arrow-down.png);
+  width: 10px;
+  height: 6px;
+  margin-left: 10px;
+}
+
+.autem__text {
+  font-weight: 400;
+  line-height: 24px;
+  opacity: .5;
+  margin-bottom: 30px;
+}
