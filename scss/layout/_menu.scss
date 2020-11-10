@@ -65,7 +65,7 @@
    .menu {
       &__wrapper {
          @include size(100%);
-         @include pos(fixed, $t: 100vh, $r: 0, $b: 0, $l: 0);
+         @include pos(fixed, $t: -100%, $r: 0, $b: 0, $l: 0);
          background: rgba(60, 40, 177, 0.9);
          display: flex;
          flex-direction: column;
@@ -85,32 +85,43 @@
          display: flex;
          align-items: baseline;
       }
-      &__list{
+      &__list {
          display: flex;
          margin-right: 210px;
       }
-      &__item{
+      &__item {
          margin: 0 15px;
       }
-      &__link{
-         font-size: 16px; 
-      }
-      &__hover{
+      &__link {
+         font-size: 16px;
+         border: 1px solid transparent;
          position: relative;
-         z-index: 1;
-         &::before{
-            @include size(0);
-            @include align(true, true, absolute);
-            background: var(--hover);
-            content: '';
-            transition: all .3s ease;
-            border-radius: 25px;
-            z-index: -1;
+         padding: 5px;
+         transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+         &::before,
+         &::after {
+            @include size(0, 1px);
+            content: "";
+            background:var(--hover);
+            display: block;
+            transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
          }
-         &:hover{
-            &::before{
-               @include size(calc(100% + 10px), calc(100% + 5px));
+         &::before {
+            @include pos(absolute, $l: 0, $b: 0);
+            box-shadow: inset 0px 0px 0pxvar(--hover);
+         }
+         &::after {
+            @include pos(absolute, $t: 0, $r: 0);
+         }
+         &:hover {
+            &::before,
+            &::after {
+               @include size(90%, 1px);
             }
+         }
+         &:hover {
+            border-left: 1px solid var(--hover);
+            border-right: 1px solid var(--hover);
          }
       }
    }

@@ -19,6 +19,10 @@
    &--gallery{
       margin-bottom: 45px;
    }
+   &--tempo{
+      color: #fff;
+      margin-bottom: 30px;
+   }
 }
 @media (min-width: $mobile) {
    .logo{
@@ -36,7 +40,13 @@
       margin-bottom: 55px;
    }
    .text{
-      width: 50%;
+      &--gallery{
+         width: 50%;
+      }
+      &--omnis{
+         margin-bottom: 30px;
+         color: var(--color);
+      }
    }
    .info{
       display: flex;
