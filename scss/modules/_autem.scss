@@ -10,6 +10,7 @@
 
     &__title {
         font-size: 48px;
+        font-weight: 700;
         margin-bottom: 40px;
     }   
 
@@ -68,10 +69,13 @@
         margin-bottom: 30px;
     }
         
-}        
+}
 
-
-
-
-
-    
+@media (min-width: $mobile) {
+    .autem {
+        &__wrapper {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
