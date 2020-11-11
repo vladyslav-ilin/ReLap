@@ -1,25 +1,18 @@
 .autem {
-    position: relative;
+
     margin-top: 45px;
 
-
-
-        &__subtitle {
+    &__subtitle {
         font-family: $title;
         font-weight: 700;
         margin-bottom: 20px;
     }
-    
-
-
 
     &__title {
-        font-family: $title;
+        font-size: 48px;
         font-weight: 700;
         margin-bottom: 40px;
-    }
-    
-
+    }   
 
     &__caption { 
         
@@ -67,8 +60,7 @@
             }
         }
 
-    }
-    
+    }    
 
     &__text {
         font-weight: 400;
@@ -77,10 +69,13 @@
         margin-bottom: 30px;
     }
         
-}        
+}
 
-
-
-
-
-    
+@media (min-width: $mobile) {
+    .autem {
+        &__wrapper {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
