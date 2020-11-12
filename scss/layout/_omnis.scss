@@ -1,16 +1,16 @@
 .omnis {
    padding: 45px 0 50px;
+   background: #FDF2FF;
    &__item {
       position: relative;
       max-width: 570px;
-      margin-left: 15px;
+      margin: 0 auto;
       &::before {
-         @include size(calc(100% - 1%));
+         @include size(100%);
          @include pos(absolute, $b: -20px, $l: -20px);
          content: "";
          background: linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
          border-radius: 3px;
-         
       }
    }
    &__img {
@@ -25,10 +25,9 @@
       position: relative;
    }
    &__info {
-      @include align(true, true, absolute);
+      @include pos(absolute, $l:45px, $b:40px);
       width: 83%;
       z-index: 2;
-      bottom: 0;
    }
    &__title {
       font: 700 24px/32px $title;
@@ -50,6 +49,20 @@
          background: url("../../images/omnis-people.png") no-repeat;
          content: "";
          left: 0;
+      }
+   }
+}
+
+@media (min-width: $mobile){
+   .omnis{
+      &__box{
+         width: 40%;
+         margin-right: 8%;
+      }
+      &__wrapper{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
       }
    }
 }

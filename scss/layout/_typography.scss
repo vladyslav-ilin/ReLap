@@ -23,6 +23,10 @@
       color: #fff;
       margin-bottom: 30px;
    }
+   &--omnis{
+      margin-bottom: 30px;
+      color: var(--color);
+   }
 }
 @media (min-width: $mobile) {
    .logo{

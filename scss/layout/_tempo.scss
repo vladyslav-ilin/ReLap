@@ -1,8 +1,8 @@
 .tempo{
-   background: left, #3023AE;
+   background: #3023AE;
    background-size: cover;
    color: #fff;
-   margin: 0 -15px 0 -15px;
+   padding: 100px 0 80px;
    &__circle{
       @include size(100px);
       @include pos(relative, $t:-30px, $r: -65px);
@@ -14,15 +14,9 @@
    &__wrapper{
       min-height: 100vh;  
       position: relative;
-      overflow: hidden;
-      text-align: center;
-      &::before{
-         @include size(323px);
-         @include pos(absolute, $b:-30%, $l:-50%);
-         content: '';
-         border-radius: 50%;
-         background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
-      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
    }
    &__img{
       display: block;
@@ -34,6 +28,7 @@
    .tempo{
       &__wrapper{
          display: flex;
+         flex-direction: row;
          justify-content: space-between;
          align-items: center;
       }

@@ -93,6 +93,7 @@ body, html {
 body {
   font: 600 16px "Source Sans Pro", sans-serif;
   color: var(--color);
+  overflow-x: hidden;
 }
 
 .container {
@@ -189,6 +190,7 @@ body {
 .button--omnis {
   background: #C86DD7;
   margin-bottom: 50px;
+  color: #fff;
 }
 
 @media (min-width: 770px) {
@@ -232,6 +234,11 @@ body {
   margin-bottom: 30px;
 }
 
+.text--omnis {
+  margin-bottom: 30px;
+  color: var(--color);
+}
+
 @media (min-width: 770px) {
   .logo {
     font-size: 40px;
@@ -266,6 +273,10 @@ body {
   }
 }
 
+.social {
+  z-index: 99;
+}
+
 .social__icon {
   font-size: 32px;
   margin: 0 5px;
@@ -297,6 +308,7 @@ body {
 }
 
 .menu {
+  z-index: 99;
   position: relative;
 }
 
@@ -573,10 +585,10 @@ body {
 }
 
 .tempo {
-  background: left, #3023AE;
+  background: #3023AE;
   background-size: cover;
   color: #fff;
-  margin: 0 -15px 0 -15px;
+  padding: 100px 0 80px;
 }
 
 .tempo__circle {
@@ -594,19 +606,16 @@ body {
 .tempo__wrapper {
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
-  text-align: center;
-}
-
-.tempo__wrapper::before {
-  width: 323px;
-  height: 323px;
-  position: absolute;
-  bottom: -30%;
-  left: -50%;
-  content: '';
-  border-radius: 50%;
-  background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tempo__img {
@@ -619,6 +628,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -636,17 +649,18 @@ body {
 
 .omnis {
   padding: 45px 0 50px;
+  background: #FDF2FF;
 }
 
 .omnis__item {
   position: relative;
   max-width: 570px;
-  margin-left: 15px;
+  margin: 0 auto;
 }
 
 .omnis__item::before {
-  width: calc(100% - 1%);
-  height: calc(100% - 1%);
+  width: 100%;
+  height: 100%;
   position: absolute;
   bottom: -20px;
   left: -20px;
@@ -671,13 +685,10 @@ body {
 
 .omnis__info {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  bottom: 40px;
+  left: 45px;
   width: 83%;
   z-index: 2;
-  bottom: 0;
 }
 
 .omnis__title {
@@ -710,8 +721,26 @@ body {
   left: 0;
 }
 
+@media (min-width: 770px) {
+  .omnis__box {
+    width: 40%;
+    margin-right: 8%;
+  }
+  .omnis__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .header {
-  background: url("../images/header.png") no-repeat center 20vh, linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
+  background: url("../images/header.png") no-repeat center 10vh, linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
   background-size: cover;
   color: #fff;
   position: relative;
