@@ -24,6 +24,7 @@ body, html {
 body{
 	font: 600 16px $text;
 	color: var(--color);
+	overflow-x: hidden;
 }
 
 .container{

@@ -1,3 +1,42 @@
 .tempo{
    background: #3023AE;
+   background-size: cover;
+   color: #fff;
+   padding: 100px 0 80px;
+   &__circle{
+      @include size(100px);
+      @include pos(relative, $t:-30px, $r: -65px);
+      background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+      border-radius: 50%;
+      float: right;
+      margin-bottom: 30px;
+   }
+   &__wrapper{
+      min-height: 100vh;  
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   &__img{
+      display: block;
+      margin: 0 auto;
+   }
+}
+
+@media (min-width: $mobile) {
+   .tempo{
+      &__wrapper{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+      }
+      &__items{
+      width: 40%;
+      }
+      &__img{
+         margin: 0;
+      }
+   }
 }

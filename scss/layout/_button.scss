@@ -8,6 +8,7 @@
    padding: 12px;
    font-weight: 700;
    cursor: pointer;
+   transition: all .3s ease;
    &--navigation{
       background: transparent;
       border-color: rgba(255, 255, 255, 0.3);
@@ -18,6 +19,11 @@
       margin: 0 auto;
       color: #fff;
    }
+   &--omnis{
+      background: #C86DD7;
+      margin-bottom: 50px;
+      color: #fff;
+   }
 }
 
 @media (min-width: $mobile){
@@ -25,6 +31,7 @@
       &:hover{
          background: var(--hover);
          border-color: rgba(255, 255, 255, 0.3);
+         transform: scale(1.1);
       }
    }
 }
