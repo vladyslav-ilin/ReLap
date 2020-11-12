@@ -73,9 +73,20 @@
 
 @media (min-width: $mobile) {
     .autem {
+        max-width: 50%;
+        
+
         &__wrapper {
             display: flex;
             align-items: center;
+        }
+
+        &__title {
+            font-size: 56px;
+        }
+
+        &__subtitle {
+            margin-top: 140px;
         }
     }
 }
