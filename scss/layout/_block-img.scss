@@ -43,6 +43,23 @@
 
 @media (min-width: $mobile) {
     .block-img {
-        right: 0;
+        @include size(670px, 540px);
+        margin-top: 95px;
+        right: -120px;
+
+        &__image {
+            &--play {
+                @include size(115px);
+                left: 0;
+                
+
+                &::before {
+                    content: url(../images/triangle-desctop.jpg);
+                    @include align(true, true, absolute);
+                }
+            }
+        }
+
+        
     }
 }

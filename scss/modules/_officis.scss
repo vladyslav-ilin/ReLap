@@ -1,6 +1,7 @@
-.fugiat {
-    padding-top: 40px;
+.officis {
+    padding-top: 55px;
     text-align: center;
+    
 
     &__title {
     font-size: 40px;
@@ -12,12 +13,17 @@
     &__text {
         font-weight: 600;
         line-height: 24px;
-        margin-bottom: 60px;
+        margin-bottom: 80px;
+
     }
 
     &__info {
-        padding: 0 26px;
+        
+        text-align: left;
         margin-bottom: 65px;
+        box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+        border-radius: 3px;
+        padding-bottom: 1px;
 
         &--title {
             font-size: 24px;
@@ -26,15 +32,26 @@
         }
 
         &--text {
+            text-align-last: left;
             line-height: 24px;
             opacity: .5;
+            margin: 0 30px 15px;
+            
+        }
+
+        &--autor {
+            margin-left: 30px;
+            margin-bottom: 45px;
+
         }
     }
+
+    
 }
 
 
 @media (min-width: $mobile) {
-    .fugiat {
+    .officis {
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
@@ -50,13 +67,7 @@
 
         &__info {
             max-width: 30%;
-            transition: all .3s;
-
-            &:hover {
-                transform: scale(1.1);
-                box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
-                border-radius: 3px;
-            }
+            margin-right: 30px;
         }
     }
 }
