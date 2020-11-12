@@ -1,0 +1,62 @@
+.fugiat {
+    padding-top: 40px;
+    text-align: center;
+
+    &__title {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: $title;
+    margin-bottom: 25px;
+    }
+
+    &__text {
+        font-weight: 600;
+        line-height: 24px;
+        margin-bottom: 60px;
+    }
+
+    &__info {
+        padding: 0 26px;
+        margin-bottom: 65px;
+
+        &--title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        &--text {
+            line-height: 24px;
+            opacity: .5;
+        }
+    }
+}
+
+
+@media (min-width: $mobile) {
+    .fugiat {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        &__header {
+            margin: 0 auto 80px;
+            padding: 0 250px;
+        }
+
+        &__title {
+            font-size: 56px;
+        }
+
+        &__info {
+            max-width: 30%;
+            transition: all .3s;
+
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+                border-radius: 3px;
+            }
+        }
+    }
+}
