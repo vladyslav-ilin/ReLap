@@ -20,14 +20,19 @@
       justify-content: space-between;
       flex-wrap: nowrap;
       &__wrapper{ 
+         overflow: hidden;
          &::before{
             @include size(100%);
             @include pos(absolute, $t:0, $l:0);
             content: '';
             background: rgba(49,0,57,0);
             transition: all .3s ease;
+            z-index: 2;
          }
          &:hover{
+           & .images__img{
+            transform: scale(1.2) rotate(-10deg);
+            }
             &::before{
                background: rgba(49,0,57,.5);
             }
@@ -35,6 +40,10 @@
                opacity: 1;
             }
          }
+      }
+      &__img{
+         display: block;
+         transition: all .5s ease;
       }
       &__item{
          @include pos(absolute, $b:7%, $l:8%);
@@ -49,7 +58,7 @@
          margin-bottom: 10px;
       }
       &__text{
-         color: var(--color-opac); 
+         color: rgba(255,255,255,.6); 
       }
    }
 }

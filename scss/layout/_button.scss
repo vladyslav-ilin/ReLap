@@ -9,6 +9,8 @@
    font-weight: 700;
    cursor: pointer;
    transition: all .3s ease;
+   position: relative;
+   z-index: 2;
    &--navigation{
       background: transparent;
       border-color: rgba(255, 255, 255, 0.3);

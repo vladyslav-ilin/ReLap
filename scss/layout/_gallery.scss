@@ -9,9 +9,20 @@
    &__list{
       margin: 0 30px 25px 0;
       color: var(--color-opac);
+      cursor: pointer;
       &--active{
          color: var(--color);
       }
    }
 }
-
+@media (min-width: $mobile){
+   .gallery{
+      &__list{
+         transition: all .3s ease;
+         &:hover{
+            color: var(--hover);
+            transform: scale(1.1);
+         }
+      }
+   }
+}

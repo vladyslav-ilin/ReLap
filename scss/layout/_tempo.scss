@@ -1,42 +1,47 @@
 .tempo{
    background: #3023AE;
-   background-size: cover;
    color: #fff;
    padding: 100px 0 80px;
-   &__circle{
-      @include size(100px);
-      @include pos(relative, $t:-30px, $r: -65px);
-      background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
-      border-radius: 50%;
-      float: right;
-      margin-bottom: 30px;
-   }
-   &__wrapper{
-      min-height: 100vh;  
-      position: relative;
+   position: relative;
+   &__container{
       display: flex;
       flex-direction: column;
       justify-content: center;
+      // &::before{
+      //    @include size(323px);
+      //    @include pos(absolute, $b:-100px, $l:0);
+      //    content: '';
+      //    border-radius: 50%;
+      //    background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+      // }
    }
-   &__img{
-      display: block;
-      margin: 0 auto;
+   &__wrapper{
+      position: relative;
+      text-align: center;
+      &::before{
+         @include size(100px);
+         @include pos(absolute, $t:-150px, $r:-60px);
+         content: '';
+         background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+         border-radius: 50%;
+      } 
    }
 }
 
-@media (min-width: $mobile) {
+@media (min-width: $mobile){
    .tempo{
-      &__wrapper{
-         display: flex;
+      &__container{
          flex-direction: row;
          justify-content: space-between;
-         align-items: center;
+      }
+      &__wrapper{
+         text-align-last: left;
+         &::before{
+            right: 0;
+         }
       }
       &__items{
-      width: 40%;
-      }
-      &__img{
-         margin: 0;
+         width: 40%;
       }
    }
 }
