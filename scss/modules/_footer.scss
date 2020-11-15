@@ -1,0 +1,122 @@
+.contact {
+    background: url(../images/contact-bg-mob.jpg) no-repeat top center;
+    background-size: cover;
+    min-height: 100vh;    
+    padding-top: 70px;
+    padding-bottom: 1px;
+
+    &__info {
+        text-align: center;
+    }
+
+    &__title {
+        font: 700 40px/48px $title;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        line-height: 24px;
+        margin-bottom: 30px;        
+    }
+
+    &__field {
+        min-width: 100%;
+        height: 50px;
+        border: 1px solid #DADADA;
+        border-right: 16px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 10px 15px;
+        font-weight: 400;
+        opacity: .5;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        
+    }
+
+    &__btn {
+        background: var(--pink);
+        color: #fff; 
+        padding: 12px 65px;
+        display: block;
+        margin: 0 auto 125px;
+    }
+
+    &__box {
+        position: relative;
+
+        &::after {
+            @include size(100%, 1px);
+            @include pos($t: -60px);
+            background: #000;
+            opacity: .1;
+            content: '';
+        }
+    }
+
+    &__nav {
+        margin-bottom: 40px;
+        padding-left: 15px;
+
+        &--title {
+            margin-bottom: 10px;
+        }
+
+        &--item {
+            font-weight: 400;
+            opacity: .5;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__social {
+        color: var(--pink);
+        padding-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    &__cop {
+        color: #333;
+        opacity: .5;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: $mobile) {
+    .contact {
+        background: url(../images/contact-bg.jpg) no-repeat top center;
+        background-size: cover;
+
+        &__wrapper {
+            padding: 135px 435px 0;
+            margin-bottom: 220px;
+        }
+
+        &__title {
+            font-size: 56px;
+        }
+
+        &__form {
+            display: flex;
+        }
+
+        &__field {
+            min-width: 70%;
+            margin-right: 30px;
+        }
+
+        &__box {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 135px 0;
+        }
+
+        &__social {
+            padding-top: 50px;
+        }
+
+        &__cop {
+            margin-bottom: 0;
+        }        
+    }
+}
