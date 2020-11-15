@@ -1112,6 +1112,22 @@ body {
   margin-bottom: 45px;
 }
 
+.officis__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.officis__logo--img {
+  width: 50%;
+  margin-bottom: 45px;
+}
+
 @media (min-width: 770px) {
   .officis {
     display: -webkit-box;
@@ -1128,9 +1144,28 @@ body {
   .officis__title {
     font-size: 56px;
   }
+  .officis__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .officis__info {
     max-width: 30%;
     margin-right: 30px;
+  }
+  .officis__logo {
+    min-width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 90px;
   }
 }
 
