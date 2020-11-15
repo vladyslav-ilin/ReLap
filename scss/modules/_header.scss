@@ -1,5 +1,5 @@
 .header {
-   background: url("../images/header.png") no-repeat center 10vh,
+   background: url("../images/header.png") no-repeat center 35vh,
       linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
    background-size: cover;
    color: #fff;
@@ -23,8 +23,10 @@
    }
 }
 
+
 @media (max-width: $mobile) {
    .header {
+
       &__navigation {
          background: #fff;
          margin: 0 -15px 15px;

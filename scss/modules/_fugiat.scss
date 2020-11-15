@@ -1,7 +1,14 @@
 .fugiat {
     padding-top: 40px;
     text-align: center;
-
+    position: relative;
+    &::before{
+        @include size(100px);
+         @include pos(absolute, $b:-135px, $r:-65px, $z:2);
+         content: '';
+         background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+         border-radius: 50%;
+    }
     &__title {
     font-size: 40px;
     font-weight: 700;
@@ -38,7 +45,9 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
-
+        &::before{
+            @include pos(absolute, $b:-65px, $r:65%, $z:2);
+        }
         &__header {
             margin: 0 auto 80px;
             padding: 0 250px;

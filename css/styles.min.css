@@ -255,8 +255,6 @@ body {
             transform: scale(1.1);
   }
   .title {
-    font-size: 56px;
-    line-height: 64px;
     margin-bottom: 55px;
   }
   .text--gallery {
@@ -273,6 +271,13 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 56px;
+    line-height: 64px;
   }
 }
 
@@ -618,6 +623,29 @@ body {
   color: #fff;
   padding: 100px 0 80px;
   position: relative;
+  overflow: hidden;
+}
+
+.tempo::before, .tempo::after {
+  content: '';
+  background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+  border-radius: 50%;
+}
+
+.tempo::before {
+  width: 323px;
+  height: 323px;
+  position: absolute;
+  bottom: -23%;
+  left: -20%;
+}
+
+.tempo::after {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  right: -12%;
+  bottom: -8%;
 }
 
 .tempo__container {
@@ -638,18 +666,19 @@ body {
   text-align: center;
 }
 
-.tempo__wrapper::before {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: -150px;
-  right: -60px;
-  content: '';
-  background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
-  border-radius: 50%;
-}
-
 @media (min-width: 770px) {
+  .tempo::before {
+    position: absolute;
+    bottom: -35%;
+    left: -10%;
+  }
+  .tempo::after {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    right: 35%;
+    bottom: -15%;
+  }
   .tempo__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -670,6 +699,19 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .tempo::before {
+    position: absolute;
+    bottom: -20%;
+    left: -10%;
+  }
+  ::after {
+    position: absolute;
+    right: 45%;
+    bottom: -15%;
+  }
+}
+
 .omnis {
   padding: 45px 0 50px;
   background: #FDF2FF;
@@ -679,6 +721,7 @@ body {
   position: relative;
   max-width: 570px;
   margin: 0 auto;
+  margin-left: 15px;
 }
 
 .omnis__item::before {
@@ -747,6 +790,9 @@ body {
 @media (min-width: 770px) {
   .omnis {
     padding: 115px 0 80px;
+  }
+  .omnis__item {
+    margin-left: 0;
   }
   .omnis__box {
     width: 40%;
@@ -849,7 +895,7 @@ body {
 }
 
 .header {
-  background: url("../images/header.png") no-repeat center 10vh, linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
+  background: url("../images/header.png") no-repeat center 35vh, linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
   background-size: cover;
   color: #fff;
   position: relative;
@@ -1006,6 +1052,19 @@ body {
 .fugiat {
   padding-top: 40px;
   text-align: center;
+  position: relative;
+}
+
+.fugiat::before {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: -65px;
+  bottom: -135px;
+  z-index: 2;
+  content: '';
+  background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+  border-radius: 50%;
 }
 
 .fugiat__title {
@@ -1046,6 +1105,12 @@ body {
         flex-wrap: wrap;
     margin: 0 auto;
   }
+  .fugiat::before {
+    position: absolute;
+    right: 65%;
+    bottom: -65px;
+    z-index: 2;
+  }
   .fugiat__header {
     margin: 0 auto 80px;
     padding: 0 250px;
@@ -1070,6 +1135,7 @@ body {
 .officis {
   padding-top: 55px;
   text-align: center;
+  position: relative;
 }
 
 .officis__title {

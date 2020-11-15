@@ -5,6 +5,7 @@
       position: relative;
       max-width: 570px;
       margin: 0 auto;
+      margin-left: 15px;
       &::before {
          @include size(100%);
          @include pos(absolute, $b: -20px, $l: -20px);
@@ -56,6 +57,9 @@
 @media (min-width: $mobile){
    .omnis{
       padding: 115px 0 80px;
+      &__item{
+         margin-left: 0;
+      }
       &__box{
          width: 40%;
          margin-right: 10%;
