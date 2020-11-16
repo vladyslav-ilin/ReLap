@@ -1283,6 +1283,8 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .contact__nav {
     padding: 0 135px 0;
   }
   .contact__social {
