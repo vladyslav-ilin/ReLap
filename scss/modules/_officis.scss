@@ -46,6 +46,17 @@
         }
     }
 
+    &__logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &--img {
+            width: 50%;
+            margin-bottom: 45px;
+        }
+    }
+
     
 }
 
@@ -65,9 +76,22 @@
             font-size: 56px;
         }
 
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
         &__info {
             max-width: 30%;
             margin-right: 30px;
+        }
+
+        &__logo {
+            min-width: 100%;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin-bottom: 90px;
         }
     }
 }
